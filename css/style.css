@@ -543,9 +543,9 @@
 
 .accordion {
   .accordion-item {
-    border-bottom: 1px solid $lightgray;
+    border: none;
     button[aria-expanded='true'] {
-      border-bottom: 1px solid $blue;
+      border: none;
     }
   }
   button {
