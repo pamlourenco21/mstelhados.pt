@@ -5,6 +5,10 @@
     --dark: #353535;
 }
 
+html {
+    scroll-padding-top: 50px; /* height of sticky header */
+  }
+
 .fw-medium {
     font-weight: 500 !important;
 }
