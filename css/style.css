@@ -147,6 +147,16 @@
     }
 }
 
+.navbar-brand {
+    position: relative;
+    background: url(../img/favicon-96x96-removebg-preview.png);
+    width: 80px;
+    left: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /*** Header ***/
 @media (max-width: 768px) {
