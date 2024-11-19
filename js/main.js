@@ -96,7 +96,22 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+
+    // jQuery for Contact Form
+    var emailLineBreak = '%0D%0A';
+    $('#contact-form').on('submit', function (e) {
+       var emailTo = 'geral@mstelhados.pt';
+       var emailSubject = 'MSTelhados - Pedido de Orçamento';
+       var senderName = $('#name').val();
+       var senderPhone = $('#tel').val();
+       var senderEmail = $('#email').val();
+       var service = $('#service').val();
+       var adress = $('#adress').val();
+       var message = $('#message').val();
+       var emailBody = 'De: ' + senderName + emailLineBreak + 'Telefone: ' + senderPhone + emailLineBreak + 'E-Mail: ' + senderEmail + emailLineBreak + 'Serviço: ' + service + emailLineBreak + 'Morada: ' + adress + emailLineBreak + 'Mensagem:' + emailLineBreak + message;
+       location.href = 'mailto:' + emailTo + '?subject=' + emailSubject +'&body=' + emailBody;
+       e.preventDefault();
+     });
 })(jQuery);
 
 
@@ -118,6 +133,3 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
-
