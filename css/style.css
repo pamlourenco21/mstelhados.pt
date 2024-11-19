@@ -367,6 +367,17 @@ html {
 
 
 /*** Project Portfolio ***/
+.port-item {
+    height: 200px;
+    overflow: visible;
+  
+}
+@media (max-width:992px) {
+    .port-item{
+        height: auto;
+        overflow: visible;
+    }
+}
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
