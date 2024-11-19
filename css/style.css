@@ -700,8 +700,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
-    border: 1px solid #FFFFFF;
+    color: #AB7442;;
+    border: 1px solid #AB7442;
     transition: .3s;
 }
 
