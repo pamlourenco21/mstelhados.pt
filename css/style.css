@@ -368,15 +368,21 @@ html {
 
 /*** Project Portfolio ***/
 .port-item {
-    height: 200px;
+    height: 520px !important;
     overflow: visible;
   
 }
+
+
 @media (max-width:992px) {
     .port-item{
-        height: auto;
+        height: auto !important;
         overflow: visible;
     }
+}
+
+.img-fluid {
+    height: 300px !important;
 }
 #portfolio-flters li {
     display: inline-block;
@@ -689,9 +695,13 @@ html {
 /*** Footer ***/
 
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/footer.jpg) center center no-repeat;
     background-size: cover;
 }
+/* .footer::before {
+ background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  } */
 
 .footer .btn.btn-social {
     margin-right: 5px;
